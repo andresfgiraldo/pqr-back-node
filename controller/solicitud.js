@@ -101,7 +101,7 @@ var controller = {
             return res.status(200).send({
                 status: "success",
                 message: "Solicitud encontrada correctamente",
-                solicitud
+                solicitud: solicitud[0]
             });
         })
 
