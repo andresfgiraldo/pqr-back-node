@@ -19,12 +19,14 @@ var controller = {
                 //crear el objeto a guardar
                 var solicitud = new Solicitud();
 
+                console.log(params);
+
                 //asignar valores
                 solicitud.radicado = Date.now();
                 solicitud.tipo = params.tipo;
                 solicitud.requerimiento = params.requerimiento;
                 solicitud.respuesta = "";
-                solicitud.origen = (!params.origen === undefined) ? params.origen : null;
+                solicitud.origen = params.origen;
 
 
                 //gardar el articulo
